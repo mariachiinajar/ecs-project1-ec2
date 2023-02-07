@@ -1,1 +1,1 @@
-sudo su - ; docker run -d -p 3000:3000 --volume /home/ubuntu/ec2ip:/usr/src/app/ip mariachiinajar/ecs-project1
+docker run -d -p 3000:3000 --volume /home/ubuntu/ec2ip:/usr/src/app/ip mariachiinajar/ecs-project1
