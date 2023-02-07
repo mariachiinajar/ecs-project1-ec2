@@ -2,12 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"  />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="ec2ip.js">
+    </script> 
+
+    <title>ECS Project 1</title>
   </head>
   <body>
-    <h1>ECS Project 1</h1>
+    <h1>ECS Project 1:</h1>
+    <div id="dice"><span id='number'></span></div>
+    <div id="aws-metadata">
+      <h2>EC2 IP data: </h2>
+      <p>Private IP: <span id="private-ip"></span></p>
+      <p>Public IP: <span id="public-ip"></span></p>
+    </div>
+
+    <script type="text/javascript">
+      // Generate a random number. 
+      let number = Math.floor(Math.random() * 100);
+      document.getElementById('number').innerHTML = number;
+
+      document.getElementById('private-ip').innerHTML = private_ip;
+      document.getElementById('public-ip').innerHTML = public_ip;
+    </script>
   </body>
 </html>
+
+
+<!-- <p>testing if css is loaded correctly.</p> ==> css loaded correctly. -->
